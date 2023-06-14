@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+
+
+  <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+  .main {
+  margin-left: 300px; /* Same as the width of the sidenav */
+  font-size: 15px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  </style>
+
+</head>
+
+
+
+
+
+<body>
+
+
+<div class="sidenav">
+	<br/> <br/> <br/> <br/> <br/>
+  <img src="img/website-profile.jpg" alt="Profile" width="300" height="300" align="middle">
+  <p style="text-align:center;"><font color="#f1f1f1">Researcher at Google</font></p>
+  <a href="http://web.cs.ucla.edu/~vidushi.dadu//">About</a>
+  <a href="http://web.cs.ucla.edu/~vidushi.dadu//publications/">Publications</a>
+  <a href="http://web.cs.ucla.edu/~vidushi.dadu//resume/">Projects</a>
+  <a href="http://web.cs.ucla.edu/~vidushi.dadu//contacts/">Contact</a> 
+    
+</div>
+
+
+    <div class="main">
+      <div class="post-listing">
+        
+<section class="post">
+  <header class="post-header">
+
+    <h2> About </h2>
+
+    
+
+    </header>
+
+    
+    <div class="post-description">
+      <p>
+
+      <p> I am a Systems Research Engineer in the <a href="https://techsysinfra.google/research/">SRG</a> group at Google. I design novel accelerator architectures and interfaces to integrate them in the system-on-chip. </p>
+
+      <p> Prior to Google, I received my Ph.D. in Computer Science from the University of California Los Angeles, advised by <a href="http://web.cs.ucla.edu/~tjn//">Prof. Tony Nowatzki</a>.  My research is about rethinking the accelerator design to achieve general-purpose acceleration using reconfigurable architecture. My work has been recognized with two IEEE Micro Top Picks awards, IEEE Micro Honorable Mention Award and an Outstanding Graduate Student award. Before joining UCLA, I did my undergraduate studies at the Indian Institute of Technology Roorkee in Electronics and Communication Engineering with minors in Computer Science (2017). During my undergraduate, I worked with <a href="https://people.inf.ethz.ch/omutlu/">Prof. Onur Mutlu</a> on designing memory scheduling techniques to mitigate inter-application interference. You can find my CV <a href="https://drive.google.com/file/d/11OcuiXLH63IYCyo_x_MWvyKLKxUu6kr1/view?usp=sharing">here</a>.</p>
+
+      <h2> PhD Work </h2> 
+	<p> During my PhD, I designed programmable accelerator for irregular workloads, called Sparse Processing Unit (SPU), by finding fundamental data-dependence forms in workloads spanning machine learning, graph processing, and databases. We enhanced SPU's flexibility using "TaskFlow" execution model for supporting fine-grained dynamic parallelism efficiently, making it suitable for graph processing workloads. We proposed PolyGraph accelerators that implements the TaskFlow execution model. My works on <a href="https://ieeexplore.ieee.org/document/9069252">SPU</a> and <a href="">PolyGraph</a> received IEEE Micro Top Picks Awards which is given to 12 papers in the field each year, based on novelty and the potential for long-term impact. These awards were given for developing a systematic understanding of large hardware-software co-design space. Our recent work, "<a href="">TaskStream</a>: Accelerating Task Parallel Workloads by Recovering Program Structure" develops a unified task-dataflow execution and programming model such that we can program SPU and PolyGraph workloads in TaskStream while exploiting the performance advantage of dynamic work distribution for medium granularity tasks. The <a href="https://dsa-framework.readthedocs.io/en/latest/Basics/index.html">framework</a> for my research is open-source. </p>
+      <!-- <p> I am a fifth-year Ph.D. student at the University of California Los Angeles, advised by <a href="http://web.cs.ucla.edu/~tjn//">Prof. Tony Nowatzki</a>.  My research is about rethinking the accelerator design to achieve general-purpose acceleration using reconfigurable architecture. My work involves understanding data-processing algorithms concerning the hardware and developing the hardware-software interface to expose their specializable characteristics to the hardware. The <a href="http://www.seas.ucla.edu/~jianw/dsagen/tutorial.html">infrastructure</a> for my research is open-source. </p> -->
+      
+      <p> During my internships, I gained experience in performance characterization of various industrial architectures -- Configurable Spatial Accelerator (<a href="https://en.wikichip.org/wiki/intel/configurable_spatial_accelerator">CSA</a>) at Intel, Edge Tensor Processing Unit (<a href="https://cloud.google.com/edge-tpu">TPU</a>) accelerator for ML at Google, and Microsoft's Azure <a href="https://azure.microsoft.com/en-us/services/synapse-analytics/?OCID=AID2200277_SEM_00cc5053506f160a99be31bfc5aba3be:G:s&ef_id=00cc5053506f160a99be31bfc5aba3be:G:s&msclkid=00cc5053506f160a99be31bfc5aba3be">Synapse</a> Spark for analytical database processing. </p>
+
+
+	<!--	I am interested in co-designing hardware/software with the goal to ultimately develop efficient general-purpose accelerator, in terms of both performance and energy-efficiency. There is a continuing trend of developing application-specific architectures which are however high performant, they get obsolete with the new algorithm advancements. My research is focused on reconfigurable architectures which provide good promise of generality. I am interested in enhancing their capabilities to support challenging (in terms of their interaction with hardware) workloads using microarchitecture and memory design.  system for Spark During my internship at Intel, I developed memory trace format for spatial architectures and wrote simulator to study memory behaviors of a wide range of accelerator workloads.   </p> -->
+
+
+	<!--https://drive.google.com/file/d/1f_3zay-SVSgqXBJXNV8QJ0eaPkWcRHUo/view?usp=sharing">here</a> and my detailed research statement <a href="https://drive.google.com/file/d/17WUornYBbtCIB7LFrbtnWIiiTTcf22XY/view?usp=sharing">here</a>.</p> -->
+</p>
+    </div>
+    
+</section>
+
+
+
+<section class="post">
+  <header class="post-header">
+
+    <h2> News </h2>
+
+    
+
+    </header>
+
+    
+    <div class="post-description">
+      <p>
+      <p> [April '23] Serving on MICRO 2023 and ASPLOS 2024 program committee. </p>
+      <p> [March '23] Our paper on profiling warehouse-scale big data processing platforms for acceleration: a limit study was aceepted at ISCA 2023. My first Google paper!! </p>
+
+      <p> [October '22] I am honored to serve on the ASPLOS 2023 program committee. </p>
+
+      <p> [August '22] Defended my PhD (Dissertation: Generalizing Programmable Accelerators for Irregularity). </p>
+
+      <p> [June '22] Won Outstanding Graduate Student Award at UCLA </p>
+
+      <p> [March '22] Presented our TaskStream work at ASPLOS. </p>
+
+      <p> [January '22] Our graph processing accelerator, PolyGraph, received IEEE Micro Top Picks award. </p>
+
+</p>
+    </div>
+    
+</section>
+ 
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+</body>
+</html>

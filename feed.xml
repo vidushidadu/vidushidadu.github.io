@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vidushi.dadu</title>
+    <description>A simple and awesome blog theme powered by jekyll.</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>2019-10-11</pubDate>
+    <lastBuildDate>Fri, 11 Oct 2019 19:39:01 +0200</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>About</title>
+        <description>&lt;p&gt;I am a third year PhD student at University to California Los Angeles advised by Prof. Tony Nowatzki. I did my undergraduate studies at Indian Institute of Technology Roorkee in Electronics and Communication Engineering.&lt;/p&gt;
+
+&lt;p&gt;I am interested in co-designing hardware/software with the goal to ultimately develop efficient general-purpose accelerator, in terms of both performance and energy-efficiency. There is a continuing trend of developing application-specific architectures which are however high performant, they get obsolete with the new algorithm advancements. My research is focused on reconfigurable architectures which provide good promise of generality. I am interested in enhancing their capabilities to support challenging (in terms of their interaction with hardware) workloads using microarchitecture and memory design.&lt;/p&gt;
+</description>
+        <pubDate>2019-10-11</pubDate>
+        <link>/articles/2015-08/welcome-to-jekyll</link>
+        <guid isPermaLink="true">/articles/2015-08/welcome-to-jekyll</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
