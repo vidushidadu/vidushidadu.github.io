@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head>
+
+
+  <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+  .main {
+  margin-left: 300px; /* Same as the width of the sidenav */
+  font-size: 15px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  </style>
+
+ 
+  <!--<title>Resume | Vidushi Dadu</title>-->
+</head>
+
+
+<body>
+
+<div class="sidenav">
+<br/> <br/> <br/> <br/> <br/>
+   <img src="../img/website-profile.jpg" alt="Profile" width="300" height="300" align="middle">
+
+  <p style="text-align:center;"><font color="#f1f1f1">Researcher at Google</font></p>
+  <a href="http://web.cs.ucla.edu/~vidushi.dadu//">About</a>
+  <a href="http://web.cs.ucla.edu/~vidushi.dadu//publications/">Publications</a>
+  <a href="http://web.cs.ucla.edu/~vidushi.dadu//resume/">Projects</a>
+  <a href="http://web.cs.ucla.edu/~vidushi.dadu//contacts/">Contact</a> 
+  
+    
+</div>
+
+    <div class="main">
+      <div class="post-listing">
+        <div class="row">
+    <div class="col l7">
+        <div class="row">
+            <div class="col">
+                <h1>Projects</h1>
+
+
+
+    <div class="row">
+            <div class="col">
+                <h2 style="margin: 0">Accelerating Task-Parallel Workloads by Recovering Program Structure</h2>
+		<i> Vidushi Dadu <a href="http://web.cs.ucla.edu/~tjn//">Tony Nowatzki</a> </i>
+                <p style="margin: 0"> Reconfigurable accelerators, like CGRAs and dataflow architectures,
+have come to prominence for addressing data-processing problems.
+However, they are largely limited to workloads with regular parallelism, precluding their applicability to prevalent task-parallel
+workloads. Reconfigurable architectures and task parallelism seem
+to be at odds, as the former requires repetitive and simple program
+structure, and the latter breaks program structure to create small,
+individually scheduled program units.
+Our insight is that if tasks and their potential for communication
+structure are first-class primitives in the hardware, it is possible
+to recover program structure with extremely low overhead. We
+propose a task execution model for accelerators called TaskStream,
+which annotates task dependences with information sufficient to
+recover inter-task structure. TaskStream enables work-aware load
+balancing, recovery of pipelined inter-task dependences, and recovery of inter-task read sharing through multicasting.
+
+We apply TaskStream to a reconfigurable dataflow architecture,
+creating a seamless hierarchical dataflow model for task-parallel
+workloads. We compare our accelerator, Delta, with an equivalent
+static-parallel design. Overall, we find that our execution model can
+improve performance by 2.2x with only 3.6% area overhead, while
+alleviating the programming burden of managing task distribution.
+</p>
+
+             <img src="../img/taskstream.png" alt="taskstream" width="600" height="200" align="middle">
+              <br/>
+	     <br/>
+	     <br/>
+                
+            </div>
+    </div>
+
+    <div class="row">
+            <div class="col">
+                <h2 style="margin: 0">Exposing the Value of Flexibility in Graph Processing Accelerators</h2>
+		<i> Vidushi Dadu, <a href="https://sihaoliu.github.io/">Sihao Liu</a>, <a href="http://web.cs.ucla.edu/~tjn//">Tony Nowatzki</a> </i>
+                <p style="margin: 0"> Because of the importance of graph workloads and the lim-
+itations of CPUs/GPUs, many graph processing accelerators
+have been proposed. The basic approach of prior accelerators
+is to focus on a single graph algorithm variant (eg. bulk-
+synchronous + slicing). While helpful for specialization, this
+leaves performance potential from flexibility on the table
+and also complicates understanding the relationship between
+graph types, workloads, algorithms, and specialization.
+
+In this work, we explore the value of flexibility in graph
+processing accelerators. First, we identify a taxonomy of key
+algorithm variants. Then we develop a template architecture
+(PolyGraph) that is flexible across these variants while being
+able to modularly integrate specialization features for each.
+
+Overall we find that flexibility in graph acceleration is
+critical. If only one variant can be supported, asynchronous-
+updates/priority-vertex-scheduling/graph-slicing is the best
+design, achieving 1.93x speedup over the best-performing accelerator, GraphPulse. However, static flexibility per-workload
+can further improve performance by 2.71x. With dynamic
+flexibility per-phase, performance further improves by up to
+50%.
+             <img src="../img/polygraph.png" alt="polygraph" width="500" height="300" align="middle">
+                
+                
+              <br/>
+	     <br/>
+	     <br/>
+                
+            </div>
+    </div>
+
+    <div class="row">
+            <div class="col">
+                <h2 style="margin: 0">Using Memory Traces To Drive Spatial Architecture Studies</h2>
+		<i> Vidushi Dadu, <a href="https://www.linkedin.com/in/kerminfleming/">Kermin Elliott Fleming</a> </i>
+                <p style="margin: 0"> Spatial architectures have found applications in many specialization domains (eg. FPGA, CGRA, ASIC) but their evaluation has advanced haphazardly. The reason is that the flexibility in these architectures opens the design room for possible architecture techniques, making it hard to maintain a scientific baseline which is consistent with most hardware proposals. To drive the evaluation of spatial architecture studies, we have developed a broadly applicable memory trace format along with a trace generation algorithm. Using the traces, we performed workload characterization for important workloads in signal processing, linear algebra, graph processing, and bioinformatics. </p>
+             <img src="../img/intern-talk.jpg" alt="spatial" width="300" height="300" align="middle">
+                
+
+	     <br/>
+	     <br/>
+	     <br/>
+              
+
+            </div>
+    </div>
+
+    <div class="row">
+            <div class="col">
+                <h2 style="margin: 0">Towards General Purpose Acceleration by Exploiting Data-Dependence Forms</h2>
+		<i> Vidushi Dadu, <a href="https://were.github.io/">Jian Weng</a>, <a href="https://sihaoliu.github.io/">Sihao Liu</a>, <a href="http://web.cs.ucla.edu/~tjn//">Tony Nowatzki</a> </i>
+		<p style="margin: 0"> Programmable hardware accelerators (eg. vector processors, GPUs) have been extremely successful at targeting algorithms with regular control and memory patterns to achieve order-of-magnitude performance and energy efficiency. However, they perform far under the peak on important irregular algorithms, like those from graph processing, database querying, genomics, advanced machine learning, and others. We find that the reason is that they try to handle arbitrary control and memory dependence while data-processing algorithms exhibit only a handful of characteristics. By capturing the problematic behavior at a domain-agnostic level, we propose an accelerator that is sufficiently general, matches domain-specific accelerator performance, and significantly outperforms traditional CPUs and GPUs. </p>
+	
+		<img src="../img/spu.jpg" alt="spu" width="800" height="300" align="middle">
+		<!--<img src="../img/spu.jpg" alt="spu" align="middle">-->
+		<!--<embed src="../img/intro-fig.pdf" width="300px" height="300px" />-->
+
+              <br/>
+	     <br/>
+	     <br/>
+                
+                
+                
+
+            </div>
+    </div>
+
+    <div class="row">
+            <div class="col">
+                <h2 style="margin: 0">Simple Scheduling and Partitioning Techniques for Subarray-Aware Memories <a href="https://drive.google.com/file/d/1A8jf27y_9vTjL3hzWJHJ6gCc0LecNGnw/view?usp=sharing">[paper]</a></h2>
+		<i> Vidushi Dadu, <a href="http://users.ece.cmu.edu/~saugatag/">Saugata Ghose</a>, <a href="https://www.linkedin.com/in/kevin-chang-kaiwei/">Kevin Chang</a>, <a href="https://people.inf.ethz.ch/omutlu/">Onur Mutlu</a> </i>
+		<p style="margin: 0"> Prior works exploit implicit parallelism present in DRAMs (in the form of ranks, banks, and subarrays) to effectively distribute shared main memory to applications in a multi-core system. Although such techniques are expected to improve memory throughput, data distribution with lower granularity often complicates the scheduling memory requests problem. We suggest a hybrid application-aware scheduling and memory mapping technique to mitigate inter-application interference in subarray-aware memories. The application's characteristics are captured during a profiling phase using a novel metric called subarray sensitivity. </p>
+
+		<img src="../img/subarray.png" alt="spu" width="500" height="200" align="middle">
+		<p> <font color="gray">Image source: Yoongu Kim et. al., A Case for Exploiting Subarray-Level Parallelism (SALP) in DRAM, ISCA 2012.</font> </p>
+
+
+                
+	     <br/>
+	     <br/>
+	     <br/>
+                
+                
+
+            </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+
+  <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+</body>
+</html>
